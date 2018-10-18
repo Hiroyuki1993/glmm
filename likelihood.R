@@ -15,7 +15,7 @@ likelihood = function(y){
   })
 }
 
-y = c(3,2,4,3)
+y = c(3,2,4,3, 0, 0, -1, 10, 9, 10, -1)
 likelihood(y)(2)
 plot(likelihood(y), 2, 4, xlab="mu", ylab="likelihood")
 
