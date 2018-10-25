@@ -14,6 +14,7 @@ hist(predict(fit.lm, interval="prediction"))
 
 # log-normal
 fit.lm.log = lm(log(salary) ~ HR, data = dat)
+summary(fit.lm.log)
 predict = fit.lm.log$fitted.values
 sigma = sum(fit.lm.log$residuals^2)/199
 y = rlnorm(199, predict, sigma)
