@@ -1,3 +1,4 @@
+library(tidyverse)
 library(lme4)
 
 fit.lmm = lmer(salary ~ HR + (0 + HR|team), data)
